@@ -1,0 +1,23 @@
+<h2>AI Resume Generator</h2>
+
+<input id="name" placeholder="Full Name">
+
+<input id="role" placeholder="Job Role">
+
+<textarea id="experience" placeholder="Experience"></textarea>
+
+<textarea id="skills" placeholder="Skills"></textarea>
+
+<button onclick="generateResume()">
+Generate Resume
+</button>
+
+<div id="result"></div>
+
+<button onclick="downloadPDF()">
+Download PDF
+</button>
+
+<script src="js/generator.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
