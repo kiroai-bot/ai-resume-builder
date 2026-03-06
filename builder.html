@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Resume Builder</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h2>AI Resume Builder</h2>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<input id="name" placeholder="Full Name">
+
+<input id="role" placeholder="Job Role">
+
+<textarea id="skills" placeholder="Skills"></textarea>
+
+<textarea id="experience" placeholder="Experience"></textarea>
+
+<select id="template">
+
+<option value="modern">Modern</option>
+<option value="professional">Professional</option>
+<option value="creative">Creative</option>
+<option value="minimal">Minimal</option>
+
+</select>
+
+<button onclick="aiWrite()">AI Write</button>
+
+<button onclick="generateResume()">Generate Resume</button>
+
+<button onclick="checkATS()">Check ATS Score</button>
+
+</div>
+
+<div id="resumePreview" class="card resume-preview"></div>
+
+<div id="atsScore"></div>
+
+</div>
+
+<script src="js/ai.js"></script>
+<script src="js/builder.js"></script>
+<script src="js/ats.js"></script>
+
+</body>
+</html>
