@@ -12,11 +12,11 @@ header{
 background:linear-gradient(135deg,#7b2ff7,#9f44ff);
 color:white;
 text-align:center;
-padding:40px;
+padding:35px;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:20px;
 }
@@ -24,12 +24,12 @@ padding:20px;
 .card{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
 margin-top:20px;
 }
 
-input,textarea{
+input,textarea,select{
 width:100%;
 padding:12px;
 margin-top:10px;
@@ -51,10 +51,10 @@ button:hover{
 background:#5f1edc;
 }
 
-.resume{
-margin-top:20px;
+.resume-preview{
 padding:20px;
 border:1px solid #eee;
+margin-top:20px;
 }
 
 @media(max-width:600px){
