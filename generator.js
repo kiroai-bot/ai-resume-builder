@@ -1,39 +1,21 @@
-async function generateResume(){
+function generateResume(){
 
-let name = document.getElementById("name").value
-let role = document.getElementById("role").value
-let experience = document.getElementById("experience").value
-let skills = document.getElementById("skills").value
+let name=document.getElementById("name").value
+let skills=document.getElementById("skills").value
+let exp=document.getElementById("experience").value
 
-let response = await fetch("/api/ai",{
+let html=`
 
-method:"POST",
+<h1>${name}</h1>
 
-headers:{
-"Content-Type":"application/json"
-},
+<h3>Skills</h3>
+<p>${skills}</p>
 
-body:JSON.stringify({
+<h3>Experience</h3>
+<p>${exp}</p>
 
-name,
-role,
-experience,
-skills
+`
 
-})
-
-})
-
-let data = await response.json()
-
-document.getElementById("result").innerText = data.result
-
-}
-
-function downloadPDF(){
-
-let element = document.getElementById("result")
-
-html2pdf().from(element).save("resume.pdf")
+document.getElementById("resumeOutput").innerHTML=html
 
 }
